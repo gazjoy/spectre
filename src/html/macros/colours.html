@@ -1,0 +1,9 @@
+{% macro cardSwatch(colorName, colorValue, colorNotes) %}
+<div class="ui-color">
+    <div class="ui-color__swatch u-fill-contextual-{{ color }}" style="background-color: {{ colorValue }};"></div>
+    <div class="ui-color__body">
+        <h6>contextual {{ colorName }}</h6>
+        <p>{{ colorNotes }}</p>
+    </div>
+</div>
+{% endmacro %}

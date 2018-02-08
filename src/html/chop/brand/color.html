@@ -1,0 +1,43 @@
+{% set patternName = "Color" %}
+
+{% extends 'layouts/block.html' %}
+
+{% import "macros/colours.html" as macroColors %}
+
+{% block content %}
+
+{% set colors = [
+    {
+        "color_name"  : "brandColor",
+        "color_value" : "#f06d06",
+        "color_notes" : "Our main color."
+
+    },
+    {
+        "color_name"  : "brandHighlight",
+        "color_value" : "#d0b000",
+        "color_notes" : "For callouts and highlights."
+    },
+    {
+        "color_name"  : "grayDark",
+        "color_value" : "#333333",
+        "color_notes" : "For things like code block backgrounds."
+    }  
+]
+%}
+
+<div class="grid g-gutter">
+    {% for color in colors %}
+    <div class="g-col-xs-6 g-col-sm-4 g-col-lg-3 g-col-xl-2">
+        {{ 
+            macroColors.cardSwatch(
+                color.color_name, 
+                color.color_value, 
+                color.color_notes
+            ) 
+        }}
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
