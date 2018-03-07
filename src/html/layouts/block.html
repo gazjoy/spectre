@@ -4,5 +4,11 @@
             <a href="#section-{{ patternName }}">{{ patternName }}</a>
         </h3>
     </div>
-    {% block content %}{% endblock %}
+    <div class="ui-pattern__body">
+        <div class="ui-demo">
+            <div class="ui-demo__demo">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+    </div>
 </div>
