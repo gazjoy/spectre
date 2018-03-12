@@ -1,5 +1,6 @@
 {
-  "javascripts/app.js": "javascripts/app-0e77a9359c71a5702d77.js",
-  "stylesheets/app.css": "stylesheets/app-e5f185ecdb.css",
-  "stylesheets/ui.css": "stylesheets/ui-05dd150261.css"
+  "javascripts/app.js": "javascripts/app-51433e62098e8554b26c.js",
+  "stylesheets/app.css": "stylesheets/app-4729e1dc2e.css",
+  "stylesheets/normalize.css": "stylesheets/normalize-8c76c9e5cd.css",
+  "stylesheets/ui.css": "stylesheets/ui-ef5ea7e12c.css"
 }
