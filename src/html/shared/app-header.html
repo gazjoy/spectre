@@ -1,12 +1,12 @@
-<header class="ui-header">
-    <div class="u-container">
-        <div class="grid g-center g-stretch-first">
-            <div>
-                <a href="#" class="js-nav-toggle">Menu</a>
-            </div>
-            <div>
-                {{ site_name }}
-            </div>
-        </div>
-    </div>
+<header class="ui-header u-clearfix">
+    <button class="ui-btn ui-menu-btn">Menu</button>
+    <a href="/" class="ui-home" aria-label="{{ site_name }} home">{{ site_name }}</a>
+    <ul class="ui-header__buttons u-list-inline">
+        <li>
+            <a class="ui-btn" href="/getting-started/download/">Download code</a>
+        </li>
+        <li>
+            <a class="ui-btn" href="https://github.com/uswds/uswds">View on GitHub</a>
+        </li>
+    </ul>
 </header>

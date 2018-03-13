@@ -1,0 +1,15 @@
+{% extends 'layouts/application.html' %}
+{% set title = "Templates" %}
+{% set body_classes = "layout-app" %}
+
+{% block before_main %}
+<aside>
+{% include "shared/subnav/subnav-templates.html" %}
+</aside>
+{% endblock %}
+
+{% block content %}
+    <h1>Page Templates</h1>
+    <p class="lead">Demo of templates</p>
+    <a href="template-type.html">Demo typeography template</a>
+{% endblock %}  

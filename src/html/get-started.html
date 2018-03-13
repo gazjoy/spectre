@@ -1,0 +1,19 @@
+{% extends 'layouts/application.html' %}
+{% set title = "Get Started" %}
+{% set body_classes = "layout-app" %}
+
+{% block before_main %}
+<aside>
+{% include "get-started/subnav-get-started.html" %}
+</aside>
+{% endblock %}
+
+{% block content %}
+    <header class="ui-title">
+        <p>Overview</p>
+        <h1>Get Started</h1>
+    </header>
+    <p class="lead">The Web Design System provides design guidelines and code to help you quickly create 
+        trustworthy, accessible, and consistent digital services.</p>
+
+{% endblock %}  

@@ -8,15 +8,14 @@
     <link rel="stylesheet" href="stylesheets/app.css">
     <link rel="stylesheet" href="stylesheets/ui.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% include "shared/app-icons.html" %}
     {% block head %}{% endblock %}
 </head>
 
-<body class="{% block body_classes %}{{ body_classes }}{% endblock %}">
-    {% include "shared/app-header.html" %}
-    {% include "shared/app-nav.html" %}
+<body class="{% block body_classes %}isolated-app{% endblock %}">
 
-    {% block before_main %}{% endblock %}
+    {% block before_main %}
+        {% include "shared/back.html" %}
+    {% endblock %}
     
     <main>
         {% block content %}{% endblock %}

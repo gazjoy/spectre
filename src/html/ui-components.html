@@ -1,0 +1,19 @@
+{% extends 'layouts/application.html' %}
+{% set title = "UI Components" %}
+{% set body_classes = "layout-app" %}
+
+{% block before_main %}
+<aside>
+{% include "components/subnav-ui-components.html" %}
+</aside>
+{% endblock %}
+
+{% block content %}
+    <header class="ui-title">
+        <p>Overview</p>
+        <h1>UI Components</h1>
+    </header>
+    <p class="lead">Our system of UI components are designed to set a foundation to build on for our projects,
+        while providing you with plug-and-play design and code.</p>
+     <p>For getting up and running with the Design System, head over to our <a href="get-started.html">Getting started</a> page for more information.</p>
+{% endblock %}  
