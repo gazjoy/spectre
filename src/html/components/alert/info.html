@@ -1,0 +1,15 @@
+{% extends 'layouts/block.html' %}
+
+{% set pattern_name = "Information Alert" %}
+
+{% set pattern_advice = "You are providing information which is of use to a user. This is the pattern you will show to the user." %}
+
+{% block content %}
+<div class="alert alert--info">
+    {{ sprite('rocket') }}
+    <div class="alert__body">
+        <h3 class="alert__heading">Information Status</h3>
+        <p class="alert__text">Lorem ipsum dolor sit amet, <a href="javascript:void(0);">consectetur adipiscing</a> elit, sed do eiusmod.</p>
+    </div>
+</div>
+{% endblock %}

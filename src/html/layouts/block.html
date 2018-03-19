@@ -1,9 +1,16 @@
-<div class="ui-pattern" id="section-{{ patternName | lower }}">
+<div class="ui-pattern" id="section-{{ pattern_name | lower }}">
     <div class="ui-pattern__header">
         <h3>
-            <a href="#section-{{ patternName | lower }}">{{ patternName }}</a>
+            <a href="#section-{{ pattern_name | lower }}">{{ pattern_name }}</a>
         </h3>
-        <p>{{ patternSub }}</p>
+
+        {% if pattern_advice %}
+        <p>{{ pattern_advice }}</p>
+        {% endif %}
+
+        {% if pattern_external_link %}
+        <a href="{{ pattern_external_link }}">{#{ sprite('new-tab') }#} Link</a>
+        {% endif %}
     </div>
     <div class="ui-pattern__body">
         <div class="ui-demo">

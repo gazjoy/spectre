@@ -11,6 +11,16 @@
 @import "component/button";
 
 
+.ui-sprite {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+.ui-main-content,
+.ui-sidebar {
+    margin-top: 2rem;
+}
 
 .ui-nav-primary,
 .ui-nav-secondary,
@@ -54,7 +64,6 @@
         }
         > aside {
             grid-area: sidebar;
-            margin-top: 2em;
             > * {
                 position: -webkit-sticky;
                 position: sticky;
@@ -62,7 +71,6 @@
             }
         }
         > main {
-            margin-top: 2em;
             grid-area: main;
         }
     }
@@ -326,7 +334,7 @@
  */
 
 .ui-pattern {
-    margin: 3em 3em 3em auto;
+    margin: 3em auto;
     position: relative;
 
     &__anchor {
@@ -454,35 +462,46 @@
  * Color
  */
 
-.ui-color__swatch {
-    height: 4em;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 4em;
-    font-size: 18px;
-    border-radius: $border-radius $border-radius 0 0;
-    border: 1px solid rgba(0,0,0,.1);
-}
-.ui-color__body {
-    padding: spacing(sm);
-    border-radius: 0 0 $border-radius $border-radius;
+ .ui-color {
+    border-radius: $border-radius;
     background-color: color(neutral, lightest);
     border: 1px solid rgba(0,0,0,.1);
+    overflow: hidden;
 
-    > * {
-        margin: 0;
+    &__swatch {
+        height: 5em;
+        position: relative;
     }
 
-    p {
-        font-size: 11px;
-        color: color(neutral, dark);
+    &__body {
+        padding: spacing(sm);
+
+        > * {
+            margin: 0;
+        }
+    
+        p {
+            font-size: 11px;
+            color: color(neutral, dark);
+        }
+    
+        code {
+            padding-left: 0;
+            font-size: 11px;
+        }
     }
 
-    code {
-        padding-left: 0;
-        font-size: 11px;
+    &__value {
+        display: block;
+        padding: 0 6px;
+        background-color: #ffffff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 12px;
+        border-bottom-right-radius: $border-radius;
     }
-}
+ }
 
 
 /**

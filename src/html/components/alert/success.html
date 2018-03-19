@@ -1,0 +1,15 @@
+{% extends 'layouts/block.html' %}
+
+{% set pattern_name = "Successful Alert" %}
+
+{% set pattern_advice = "Something successful or positive happened, great! This is the pattern you will show to the user." %}
+
+{% block content %}
+<div class="alert alert--success">
+    {{ sprite('rocket') }}
+    <div class="alert__body">
+        <h3 class="alert__heading">Success Status</h3>
+        <p class="alert__text">Lorem ipsum dolor sit amet, <a href="javascript:void(0);">consectetur adipiscing</a> elit, sed do eiusmod.</p>
+    </div>
+</div>
+{% endblock %}

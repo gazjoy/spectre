@@ -1,5 +1,5 @@
 {% extends 'layouts/application.html' %}
-{% set title = "Logos" %}
+{% set title = "Alert" %}
 {% set body_classes = "layout-app" %}
 
 {% block before_main %}
@@ -11,9 +11,8 @@
 {% block content %}
     <header class="ui-title">
         <p>UI Components</p>
-        <h1>Logos</h1>
+        <h1>Alert</h1>
     </header>
-    
-    <p>All about logos</p>
-    {% include "components/logo.html" %}
+    <p class="lead">Alerts keep users informed of important and sometimes time-sensitive changes.</p>
+    {% include "components/alert.html" %}
 {% endblock %}  

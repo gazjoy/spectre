@@ -1,10 +1,12 @@
-{% macro cardSwatch(colorName, colorValue, colorNotes) %}
+{% macro cardSwatch(color_name, color_value, color_notes) %}
 <div class="ui-color">
-    <div class="ui-color__swatch" style="background-color: {{ colorValue }};"></div>
+    <div class="ui-color__swatch" style="background-color: {{ color_value }};">
+        <span class="ui-color__value">{{ color_value }}</span>
+        <span class="u-visually-hidden">Shows colour swatch for {{ color_name }}</span>
+    </div>
     <div class="ui-color__body">
-        <h6>{{ colorName }}</h6>
-        <p>{{ colorNotes }}</p>
-        <p>{{ colorValue }}</p>
+        <h6>{{ color_name }}</h6>
+        <p>{{ color_notes }}</p>
     </div>
 </div>
 {% endmacro %}

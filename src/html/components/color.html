@@ -1,7 +1,8 @@
 {% extends 'layouts/block.html' %}
 
-{% set patternName = "Color" %}
-{% set patternSub = "Colour palettes" %}
+{% set pattern_name = "Color" %}
+{% set pattern_advice = "All colours should be contrast checked." %}
+{% set pattern_external_link = "https://webaim.org/resources/contrastchecker/" %}
 
 {% import "macros/colours.html" as macroColors %}
 
@@ -12,7 +13,6 @@
         "color_name"  : "Brand Main",
         "color_value" : "#f06d06",
         "color_notes" : "Our main color."
-
     },
     {
         "color_name"  : "Brand Highlight",
@@ -22,14 +22,19 @@
     {
         "color_name"  : "Brand Gray Dark",
         "color_value" : "#333333",
-        "color_notes" : "For things like code block backgrounds."
-    }  
+        "color_notes" : "Used as background colour on blockquote."
+    },
+    {
+        "color_name"  : "Brand Gray Light",
+        "color_value" : "#666666",
+        "color_notes" : "Used heavily on borders."
+    }
 ]
 %}
 
 <div class="grid g-gutter">
     {% for color in colors %}
-    <div class="g-col-xs-6 g-col-sm-4 g-col-lg-3 g-col-xl-2">
+    <div class="g-col-xs-6 g-col-sm-4 g-col-lg-3 g-col-xl-2 u-full-height">
         {{ 
             macroColors.cardSwatch(
                 color.color_name, 

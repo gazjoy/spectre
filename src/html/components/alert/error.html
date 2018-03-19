@@ -1,0 +1,15 @@
+{% extends 'layouts/block.html' %}
+
+{% set pattern_name = "Failed Alert" %}
+
+{% set pattern_advice = "Something failed or went wrong, bad times! This is the pattern you will show to the user." %}
+
+{% block content %}
+<div class="alert alert--error">
+    {{ sprite('rocket') }}
+    <div class="alert__body">
+        <h3 class="alert__heading">Failed Status</h3>
+        <p class="alert__text">Lorem ipsum dolor sit amet, <a href="javascript:void(0);">consectetur adipiscing</a> elit, sed do eiusmod.</p>
+    </div>
+</div>
+{% endblock %}

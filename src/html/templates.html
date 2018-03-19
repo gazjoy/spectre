@@ -3,13 +3,16 @@
 {% set body_classes = "layout-app" %}
 
 {% block before_main %}
-<aside>
+<aside class="ui-sidebar">
 {% include "shared/subnav/subnav-templates.html" %}
 </aside>
 {% endblock %}
 
 {% block content %}
-    <h1>Page Templates</h1>
-    <p class="lead">Demo of templates</p>
-    <a href="template-type.html">Demo typeography template</a>
+    <header class="ui-title">
+        <p>Overview</p>
+        <h1>Page Templates</h1>
+    </header>
+    <p class="lead">Templates are where all the UI components come together in complete layouts. These templates are great starting point for prototyping or for trying the Design System to see if they’re a good fit for you.</p>
+    
 {% endblock %}  
