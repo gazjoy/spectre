@@ -1,6 +1,8 @@
 {
+  "images/blok.png": "images/blok-cdce2bfbfd.png",
+  "images/icons.svg": "images/icons-cf401693c1.svg",
   "javascripts/app.js": "javascripts/app-4cc9a54c6360105a5bd7.js",
   "stylesheets/app.css": "stylesheets/app-4729e1dc2e.css",
   "stylesheets/normalize.css": "stylesheets/normalize-8c76c9e5cd.css",
-  "stylesheets/ui.css": "stylesheets/ui-9a509c698e.css"
+  "stylesheets/ui.css": "stylesheets/ui-80e60392c3.css"
 }
