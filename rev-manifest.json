@@ -1,8 +1,9 @@
 {
   "images/blok.png": "images/blok-cdce2bfbfd.png",
-  "images/icons.svg": "images/icons-cf401693c1.svg",
-  "javascripts/app.js": "javascripts/app-4cc9a54c6360105a5bd7.js",
-  "stylesheets/app.css": "stylesheets/app-4729e1dc2e.css",
-  "stylesheets/normalize.css": "stylesheets/normalize-8c76c9e5cd.css",
-  "stylesheets/ui.css": "stylesheets/ui-80e60392c3.css"
+  "images/icons.svg": "images/icons-b1a12b72d4.svg",
+  "images/new-tab.svg": "images/new-tab-f67c9809ec.svg",
+  "javascripts/app.js": "javascripts/app-86cdfa82bd851e270857.js",
+  "stylesheets/app.css": "stylesheets/app-8c9cff9460.css",
+  "stylesheets/normalize.css": "stylesheets/normalize-2ef6adf9c6.css",
+  "stylesheets/ui.css": "stylesheets/ui-ca1f5654a8.css"
 }
