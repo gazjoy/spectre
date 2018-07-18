@@ -92,6 +92,21 @@
     line-height: 3rem;
     padding-top: 0;
     padding-bottom: 0;
+    &::after {
+        background: rgba(0, 0, 0, 0.2);
+        content: '';
+        display: none;
+        height: 100%;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    &.is-active::after {
+        display: block;
+    }
 }
 
 .ui-home {
@@ -132,6 +147,18 @@
     color: #fff;
     border-bottom: 1px solid color(neutral, darker);
 
+    @include breakpoint(max-width screen(sm, max)) {
+        position: -webkit-sticky;
+        position: sticky;
+        top: -1px;
+        z-index: 1;
+    }
+
+    @include breakpoint(screen(md)) {
+        display: flex;
+        align-items: center;
+    }
+
     a {
         color: color(neutral, white);
         fill: color(neutral, white);
@@ -139,6 +166,7 @@
 
     &__buttons {
         float: right;
+        margin: 0 0 0 auto;
     }
 }
 
@@ -348,7 +376,7 @@
         border-radius: $border-radius $border-radius 0 0;
         padding: spacing() spacing(lg);
 
-        h3 {
+        > :first-child {
             padding-right: spacing();
         }
 
@@ -356,11 +384,13 @@
             text-decoration: none;
         }
 
+        .ui-sprite {
+            width: 18px;
+            height: 18px;
+        }
+
         svg {
             fill: color(neutral, light);
-            height: 18px;
-            width: 18px;
-            margin-right: 5px;
         }
 
         * {

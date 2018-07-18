@@ -6,10 +6,24 @@
 
 .alert,
 %alert {
-    padding: spacing();
+    display: flex;
+    align-items: center;
+    padding: 0 spacing(lg);
     background-color: color(neutral, lighter);
     border: 1px solid color(neutral, dark);
     margin-bottom: spacing();
+
+    &__body {
+        padding: spacing() spacing() spacing() spacing(lg);
+        flex-grow: 1;
+        margin-left: spacing(lg);
+        border-left: 1px solid color(neutral, dark);
+    }
+
+    &__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 
     p {
         margin: 0;
@@ -62,22 +76,34 @@
 %alert--success {
     background-color: color(contextual, success-light);
     border-color: darken(color(contextual, success-light),12%);
+    .alert__body {
+        border-color: darken(color(contextual, success-light),12%);
+    }
 }
 
 .alert--warning,
 %alert--warning {
     background-color: color(contextual, warning-light);
-    border-color: darken(color(contextual, warning-light),15%);
+    border-color: darken(color(contextual, warning-light),20%);
+    .alert__body {
+        border-color: darken(color(contextual, warning-light),20%);
+    }
 }
 
 .alert--error,
 %alert--error {
     background-color: color(contextual, error-light);
     border-color: darken(color(contextual, error-light),5%);
+    .alert__body {
+        border-color: darken(color(contextual, error-light),5%);
+    }
 }
 
 .alert--info,
 %alert--info {
     background-color: color(contextual, info-light);
     border-color: darken(color(contextual, info-light),5%);
+    .alert__body {
+        border-color: darken(color(contextual, info-light),5%);
+    }
 }

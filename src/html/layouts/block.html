@@ -1,7 +1,9 @@
+{% from 'macros/helpers.html' import sprite %}
+
 <div class="ui-pattern" id="section-{{ pattern_name | lower }}">
     <div class="ui-pattern__header">
         <h3>
-            <a href="#section-{{ pattern_name | lower }}">{{ pattern_name }}</a>
+            <a href="#section-{{ pattern_name | lower }}">{{ sprite('link') }} {{ pattern_name }}</a>
         </h3>
 
         {% if pattern_advice %}

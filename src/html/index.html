@@ -1,63 +1,79 @@
-{#
-  Nunjucks Templating!
-  Homepage: https://mozilla.github.io/nunjucks/
-  Docs: https://mozilla.github.io/nunjucks/api.html
-#}
-
-{% extends 'layouts/application.html' %}
-
-{% block content %}
-  <section class="ui-hero">
+{# Nunjucks Templating! Homepage: https://mozilla.github.io/nunjucks/ Docs: https://mozilla.github.io/nunjucks/api.html #}
+{% extends 'layouts/application.html' %} {% block content %}
+<section class="ui-hero">
     <div class="u-container">
-        <h1 data-module="example"><span>{{ main_heading }}</span></h1>
+        <h1 data-module="example">
+            <span>{{ site_name }} – {{ main_heading }}</span>
+        </h1>
         <p>{{ main_tagline }}</p>
     </div>
-  </section>
+</section>
 
-  <section>
-    <div class="grid g-gutter">
-      
-        <div class="g-col-lg-3">
-          <img src="/img/home/get-started.svg" alt="">
-          <div>
-            <h3>Getting started</h3>
-            <p>Learn how to get started using the Web Design System for your project, regardless of your technical stack.</p>
+<section>
+    <div class="u-container-lg">
+        <div class="grid g-gutter-lg">
 
-            <p><a href="/get-started.html">Take the first step</a></p>
-          </div>
+            <div class="g-col-lg-4">
+                <div class="card">
+                    <img src="/images/blok.png" alt="Blank black square">
+                    <div class="card__body">
+                        <h3>Getting started</h3>
+                        <p>Learn how to get started using the Web Design System for your project, regardless of your technical
+                            stack.</p>
+
+                        <p>
+                            <a href="/get-started.html" class="ui-btn">Take the first step</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="g-col-lg-4">
+                <div class="card">
+                    <img src="/images/blok.png" alt="Blank black square">
+                    <div class="card__body">
+                        <h3>UI components</h3>
+                        <p>Discover all the different components that the Design System provides as both design and development
+                            assets.</p>
+
+                        <p>
+                            <a href="/ui-components.html" class="ui-btn">Browse the components</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="g-col-lg-4">
+                <div class="card">
+                    <img src="/images/blok.png" alt="Blank black square">
+                    <div class="card__body">
+                        <h3>Page templates</h3>
+                        <p>Explore the different page templates that have been created to jump start your product development.</p>
+
+                        <p>
+                            <a href="/templates.html" class="ui-btn">Start from a template</a>
+                        </p>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!--
+			<div class="g-col-lg-3">
+				<img src="/img/home/new.svg" alt="">
+				<div>
+					<h3>What’s new</h3>
+					<p>Keep up to date with the current news and product development updates for the Web Design System.</p>
+
+					<p>
+						<a href="/updates.html">See what’s new</a>
+					</p>
+				</div>
+			</div>
+		-->
         </div>
-      
-        <div class="g-col-lg-3">
-          <img src="/img/home/ui-component.svg" alt="">
-          <div>
-            <h3>UI components</h3>
-            <p>Discover all the different components that the Design System provides as both design and development assets.</p>
-
-            <p><a href="/ui-components.html">Browse the components</a></p>
-          </div>
-        </div>
-      
-        <div class="g-col-lg-3">
-          <img src="/img/home/new.svg" alt="">
-          <div>
-            <h3>What’s new</h3>
-            <p>Keep up to date with the current news and product development updates for the Web Design System.</p>
-
-            <p><a href="/updates.html">See what’s new</a></p>
-          </div>
-        </div>
-      
-        <div class="g-col-lg-3">
-          <img src="/img/home/page-templates.svg" alt="">
-          <div>
-            <h3>Page templates</h3>
-            <p>Explore the different page templates that have been created to jump start your product development.</p>
-
-            <p><a href="/templates.html">Start from a template</a></p>
-          </div>
-        </div>
-      
     </div>
-  </section>
+</section>
 
 {% endblock %}

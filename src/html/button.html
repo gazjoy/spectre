@@ -1,5 +1,5 @@
 {% extends 'layouts/application.html' %}
-{% set title = "Logos" %}
+{% set title = "Button" %}
 {% set body_classes = "layout-app" %}
 
 {% block before_main %}
@@ -11,10 +11,9 @@
 {% block content %}
     <header class="ui-title">
         <p>UI Components</p>
-        <h1>Logos</h1>
+        <h1>Button</h1>
     </header>
-    
-    <p class="lead">All about logos</p>
-    {% include "components/logo/main.html" %}
-    {% include "components/logo/favicon.html" %}
+    <p class="lead">Use buttons to signal actions.</p>
+    {% include "components/button/button.html" %}
+    {% include "components/button/block.html" %}
 {% endblock %}  

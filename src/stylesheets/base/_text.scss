@@ -58,14 +58,13 @@ kbd,
 pre,
 samp {
     font-size: $font-size;
+    font-family: monospace;
 }
 
-code {
-    padding: 2px 4px;
-    font-size: $font-size-sm;
-    color: color(contextual, error);
-    background-color: color(neutral, lighter);
-    border-radius: $border-radius;
+code,
+pre {
+    font-size: 1.3rem;
+    background-color: color(neutral, lightest);
 }
 
 mark {
@@ -87,6 +86,21 @@ a,
     &:hover {
         color: color(neutral, dark);
     }
+}
+
+/**
+ * Extenal Link
+ */
+
+[href^="http"]::after {
+    background: url(../images/new-tab.svg) no-repeat 0 0;
+    background-size: 100%;
+    content: '';
+    display: inline-block;
+    height: 0.85em;
+    margin-bottom: -1px;
+    margin-left: 4px;
+    width: 0.85em;
 }
 
 

@@ -1,0 +1,14 @@
+{% extends 'layouts/block.html' %}
+
+{% set pattern_name = "Text Input" %}
+
+{% set pattern_advice = "Text inputs and areas." %}
+
+{% block content %}
+<div class="field-group">
+    <label for="text1" class="field-group__label required">Text input</label>
+    <div class="field-group__field">
+        <input id="text1" type="text" placeholder="Text Input">
+    </div>
+</div>
+{% endblock %}

@@ -1,6 +1,6 @@
 import './modules'
 
-console.log(`app.js has loaded!`)
+console.log('app.js has loaded!');
 
 const siteBody = document.querySelector('body');
 
@@ -13,12 +13,14 @@ function toggleNav (e) {
 document.querySelector('.ui-menu-btn').addEventListener('click', e => {
     e.preventDefault();
     toggleNav();
+    document.querySelector('.ui-menu-btn').classList.add('is-active');
     document.querySelector('.ui-menu-close').focus();
 });
 
 document.querySelector('.ui-menu-close').addEventListener('click', e => {
     e.preventDefault();
     toggleNav();
+    document.querySelector('.ui-menu-btn').classList.remove('is-active');
     document.querySelector('.ui-menu-btn').focus();
 });
 
@@ -32,6 +34,6 @@ var nav     = document.getElementById('nav'),
     
 for (var i = 0; i < anchor.length; i++) {
     if(anchor[i].pathname == current) {
-        anchor[i].className = "is-active";
+        anchor[i].className = 'is-active';
     }
 }

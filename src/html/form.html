@@ -1,5 +1,5 @@
 {% extends 'layouts/application.html' %}
-{% set title = "Logos" %}
+{% set title = "Form" %}
 {% set body_classes = "layout-app" %}
 
 {% block before_main %}
@@ -11,10 +11,8 @@
 {% block content %}
     <header class="ui-title">
         <p>UI Components</p>
-        <h1>Logos</h1>
+        <h1>Form</h1>
     </header>
-    
-    <p class="lead">All about logos</p>
-    {% include "components/logo/main.html" %}
-    {% include "components/logo/favicon.html" %}
+    <p class="lead">Forms</p>
+    {% include "components/form/text-input.html" %}
 {% endblock %}  

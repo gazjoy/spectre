@@ -8,8 +8,8 @@
     "npm": ">=3.10.3"
   },
   "main": "gulpfile.js/index.js",
-  "homepage": "http://gazjoy.github.io/spectre",
-  "repository": "git@github.com:gazjoy/spectre.git",
+  "homepage": "http://gazjoy.github.io/",
+  "repository": "git@github.com:gazjoy/gazjoy.github.io.git",
   "bin": {
     "blendid": "bin/blendid.js"
   },
